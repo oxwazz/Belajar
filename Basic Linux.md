@@ -11,12 +11,12 @@
 * `cp -i` copying with interactive mode
 * `cp -r source_directory destination` copying dir/file to dest dir, when dest dir not exist then create
 
-### moving files and renaming files 😸
+### Moving files and renaming files 😸
 * `mv` this command can use for renaming and moving file/dir
 * `mv src dest`
 * `mv -i src dest`
 
-### compress files and creating archives 😸
+### Compress files and creating archives 😸
 **tar**
 * `tar [-] c|x|t tarfile [pattern]`
 * `tar cf test.tar tes1` example
@@ -37,7 +37,7 @@
 * `gunzip` for uncompressing data
 * `gzcat/zcat` for read the content trought the termainal/cli or internet says another way for uncompressing data
 
-### other 😸
+### Other 😸
 
 **SORT**
 * `sort file` to sorting content of file
@@ -59,7 +59,7 @@
 * `cat file1` to read the content in file
 
 
-### insight 😸
+### Insight 😸
 ```
 1. Perbedaan achiving dengan compressing!
    - Archiving memasukkan data kedalam rar, tar, tgz, dll
