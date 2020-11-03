@@ -59,8 +59,7 @@
 * `du -h` displaying in human readable
 
 ```
-1
-perbedaan achiving dengan compressing
-archiving memasukkan data kedalam rar, tar, tgz, dll
-compressing sama dengan archiving namun dapat merubah data menjadi lebih  kecil / ringan (compressing data)
+1. Perbedaan achiving dengan compressing!
+   - Archiving memasukkan data kedalam rar, tar, tgz, dll
+   - Compressing sama dengan archiving namun dapat merubah data menjadi lebih  kecil / ringan (compressing data)
 ```
