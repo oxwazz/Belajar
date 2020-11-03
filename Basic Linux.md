@@ -1,22 +1,22 @@
-### deleting files
+### Deleting files 😸
 * `rm file` removing file
 * `rm -r dir` removing the directory and all the content
 * `rm -f file` force removing file without prompting 
 * `rm s*` removing file and directory with the first character s
 * `rm .*` removing the file and folder with the first character is . 
 
-### copying files
+### Copying files 😸
 * `cp source_file directory_file` copying 1 file into dest directory
 * `cp src_file1 src_fileN dest_dir` copying more file into dest directory
 * `cp -i` copying with interactive mode
 * `cp -r source_directory destination` copying dir/file to dest dir, when dest dir not exist then create
 
-### moving files and renaming files
+### moving files and renaming files 😸
 * `mv` this command can use for renaming and moving file/dir
 * `mv src dest`
 * `mv -i src dest`
 
-### compress files and creating archives
+### compress files and creating archives 😸
 **tar**
 * `tar [-] c|x|t tarfile [pattern]`
 * `tar cf test.tar tes1` example
@@ -37,7 +37,7 @@
 * `gunzip` for uncompressing data
 * `gzcat/zcat` for read the content trought the termainal/cli or internet says another way for uncompressing data
 
-### other
+### other 😸
 
 **SORT**
 * `sort file` to sorting content of file
@@ -59,7 +59,7 @@
 * `cat file1` to read the content in file
 
 
-### insight
+### insight 😸
 ```
 1. Perbedaan achiving dengan compressing!
    - Archiving memasukkan data kedalam rar, tar, tgz, dll
