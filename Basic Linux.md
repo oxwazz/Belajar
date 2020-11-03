@@ -22,13 +22,13 @@
 * `cat file1` to read the content in file
 
 ## compress files and creating archives
-tar
+**tar**
 * `tar [-] c|x|t tarfile [pattern]`
 * `tar cf test.tar tes1` example
 * `tar xvf test.tar` example
 * `tar zcf test.tgz/tar.gz tes1` example
 
-tar options
+**tar options**
 * `c` opt for create tar
 * `x` opt for extart tar
 * `t` opt for read content tar
@@ -36,7 +36,7 @@ tar options
 * `z` opt for using compression
 * `f file` use the file
 
-compressing file to save space
+**compressing file to save space**
 * `gzip data` example (output file data.gz)
 * `gzip` for compressing data
 * `gunzip` for uncompressing data
@@ -44,15 +44,16 @@ compressing file to save space
 
 ## other
 
-SORT
+**SORT**
 * `sort file` to sorting content of file
 * `sort -ru -k2 file1` example1
-SORT OPTIONS
+
+**SORT OPTIONS**
 * `-k F` opt for selecting sort by row (F=row/field)
 * `-r` ort for reversing sort
 * `-u` opt for to take only unique value 
 
-disk usage
+**disk usage**
 * `du` estimating file usage
 * `du -k` displaying in kilobyte
 * `du -h` displaying in human readable
