@@ -58,6 +58,9 @@
 * `du -k` displaying in kilobyte
 * `du -h` displaying in human readable
 
+
+
+## insight
 ```
 1. Perbedaan achiving dengan compressing!
    - Archiving memasukkan data kedalam rar, tar, tgz, dll
