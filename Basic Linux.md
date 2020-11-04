@@ -59,7 +59,7 @@
 * `ls *[[:digit:]]` example
 
 * `\` for match a wildcard char
-* `*\? example
+* `*\?` example
 
 ## I/O and Redicrection 😸
 I/O name | Abbreviaition | File Descriptor
@@ -87,9 +87,9 @@ Standart Error | stderr | 2
 
 * `diff file1 file2` compare two file
 * `3c3 = LineNumFile1-Action-LineNumFile2`
-* `Action = (A)dd (C)hange (D)elete` <br>
+* `Action = (A)dd (C)hange (D)elete` <br><br>
 
-* `sdiff file1 file2` side-by-side comparison <br>
+* `sdiff file1 file2` side-by-side comparison <br><br>
 
 * `vimdiff file1 file2` Highlight different in vim
 vimdiff
