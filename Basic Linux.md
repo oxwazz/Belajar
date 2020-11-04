@@ -85,13 +85,13 @@ Standart Error | stderr | 2
 
 ## Comparing files 😸
 
-* `diff file1 file2` compare two filw
+* `diff file1 file2` compare two file
 * `3c3 = LineNumFile1-Action-LineNumFile2`
-* `Action = (A)dd (C)hange (D)elete`
-<br>
-* `sdiff file1 file2` side-by-side comparison
-<br>
-* `vimdiff file1 file2` Highligth different in vim
+* `Action = (A)dd (C)hange (D)elete` <br>
+
+* `sdiff file1 file2` side-by-side comparison <br>
+
+* `vimdiff file1 file2` Highlight different in vim
 vimdiff
 * `ctrl+w / w` goto the next window
 * `q` quit (close current windows)
