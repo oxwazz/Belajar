@@ -63,6 +63,7 @@
 
 ## I/O and Redicrection 😸
 I/O name | Abbreviaition | File Descriptor
+--- | --- | ---
 Standartd Input | stdin | 0
 Standard Output | stdout | 1
 Standart Error | stderr | 2
