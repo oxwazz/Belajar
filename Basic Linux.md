@@ -37,28 +37,7 @@
 * `gunzip` for uncompressing data
 * `gzcat/zcat` for read the content trought the termainal/cli or internet says another way for uncompressing data
 
-### Other 😸
-
-**SORT**
-* `sort file` to sorting content of file
-* `sort -ru -k2 file1` example1
-
-**SORT OPTIONS**
-* `-k F` opt for selecting sort by row (F=row/field)
-* `-r` ort for reversing sort
-* `-u` opt for to take only unique value 
-
-**disk usage**
-* `du` estimating file usage
-* `du -k` displaying in kilobyte
-* `du -h` displaying in human readable
-
-**other**
-* `ls s*` showing file/directory with the first character s
-* `ls -d s*` showing directory with the first char is .
-* `cat file1` to read the content in file
-
-## Wildcards
+## Wildcards 😸
 * `*` matches zero or more char
 * `ls fil*` example
 
@@ -82,7 +61,7 @@
 * `\` for match a wildcard char
 * `*\? example
 
-## I/O and Redicrection
+## I/O and Redicrection 😸
 I/O name | Abbreviaition | File Descriptor
 Standartd Input | stdin | 0
 Standard Output | stdout | 1
@@ -104,14 +83,14 @@ Standart Error | stderr | 2
 * `ls file1 not-here 1> out 2> out.err` example
 * `ls file1 not-here 1> out.both 2>&1` example
 
-## Comparing files
+## Comparing files 😸
 
 * `diff file1 file2` compare two filw
 * `3c3 = LineNumFile1-Action-LineNumFile2`
 * `Action = (A)dd (C)hange (D)elete`
-
+<br>
 * `sdiff file1 file2` side-by-side comparison
-
+<br>
 * `vimdiff file1 file2` Highligth different in vim
 vimdiff
 * `ctrl+w / w` goto the next window
@@ -119,6 +98,26 @@ vimdiff
 * `qa` quit all
 * `qa!` force quit all
 
+### Other 😸
+
+**SORT**
+* `sort file` to sorting content of file
+* `sort -ru -k2 file1` example1
+
+**SORT OPTIONS**
+* `-k F` opt for selecting sort by row (F=row/field)
+* `-r` ort for reversing sort
+* `-u` opt for to take only unique value 
+
+**disk usage**
+* `du` estimating file usage
+* `du -k` displaying in kilobyte
+* `du -h` displaying in human readable
+
+**other**
+* `ls s*` showing file/directory with the first character s
+* `ls -d s*` showing directory with the first char is .
+* `cat file1` to read the content in file
 
 ### Insight 😸
 ```
