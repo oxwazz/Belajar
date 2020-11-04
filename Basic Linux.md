@@ -58,6 +58,67 @@
 * `ls -d s*` showing directory with the first char is .
 * `cat file1` to read the content in file
 
+## Wildcards
+* `*` matches zero or more char
+* `ls fil*` example
+
+* `?` matches exacly one char
+* `ls f?le` example
+
+* `[]` a char class
+* `ls ca[nt]*` example
+* `[!aiueo]*` example
+* `[a-g]*` example
+* `[3-6]*` example
+
+* `[[:alpha:]]`
+* `[[:alnum:]]`
+* `[[:digit:]]`
+* `[[:lower:]]`
+* `[[:space:]]`
+* `[[:upper:]]`
+* `ls *[[:digit:]]` example
+
+* `\` for match a wildcard char
+* `*\? example
+
+## I/O and Redicrection
+I/O name | Abbreviaition | File Descriptor
+Standartd Input | stdin | 0
+Standard Output | stdout | 1
+Standart Error | stderr | 2
+
+### Redirection
+* `>` redirect stdout to a file = overwrite existing content
+* `>>` redirect stdout to a file = append to any existing content
+* `<` redirect input from a file to commmand
+* `&` used with direction to signal that a file descriptor being used
+
+### The null device
+* `> /dev/null/` redirect output to nowhere / passing to null device it / passing and not save the log
+
+* `ls file1 not-here > out` example
+* `sort < file1 > out` example
+* `ls -l 1> out` example
+* `ls >> out`example
+* `ls file1 not-here 1> out 2> out.err` example
+* `ls file1 not-here 1> out.both 2>&1` example
+
+## Comparing files
+
+* `diff file1 file2` compare two filw
+* `3c3 = LineNumFile1-Action-LineNumFile2`
+* `Action = (A)dd (C)hange (D)elete`
+
+* `sdiff file1 file2` side-by-side comparison
+
+* `vimdiff file1 file2` Highligth different in vim
+vimdiff
+* `ctrl+w / w` goto the next window
+* `q` quit (close current windows)
+* `qa` quit all
+* `qa!` force quit all
+
 
 ### Insight 😸
 ```
