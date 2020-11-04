@@ -87,10 +87,8 @@ Standart Error | stderr | 2
 
 * `diff file1 file2` compare two file
 * `3c3 = LineNumFile1-Action-LineNumFile2`
-* `Action = (A)dd (C)hange (D)elete` <br><br>
-
-* `sdiff file1 file2` side-by-side comparison <br><br>
-
+* `Action = (A)dd (C)hange (D)elete`
+* `sdiff file1 file2` side-by-side comparison
 * `vimdiff file1 file2` Highlight different in vim
 vimdiff
 * `ctrl+w / w` goto the next window
