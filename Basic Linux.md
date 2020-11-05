@@ -270,6 +270,167 @@ env variable can set on `~/.bash_profile`
 * `kill -l` list command kill / see all list TERM
 * ``
 
+## Scheduling Repeated Jobs with Cron 😸
+* `cron` A time based job scheduling service 
+* `crontab` A program to create, read, update, and delete your job schedule
+* use cron to schedule and automated tasks
+
+Crontab format
+* `* * * * * commmand` - (minute 0-59 | hour 0-23 | day of the month 1-31 | month of the year 1-12 | day of the week 0-6)
+
+### example
+* `0 7 * * 1 /opt/sales/bin/weekly-report` run every Monday at 07:00
+* `0 2 * * * /root/backupdb > /tmp/db.log 2>&1` send output to a log file / redirecting output
+* `0,30 * * * * /opt/acme/bin/half-hour-check` run every 30 minutes
+* `*/2 * * * * /opt/acme/bin/half-hour-check` run every 30 minutes
+* `0-4 * * * * /opt/acme/bin/first-five-mins` run for the first 5 minutes of the hour
+
+### crontab shortcut
+--- | ---
+`@yearly` | `0 0 1 1 *`
+`@annually` | `0 0 1 1 *`
+`@monthly` | `0 0 1 * *`
+`@weekly` | `0 0 * * 0`
+`@daily` | `0 0 * * *`
+`@midnight` | `0 0 * * *`
+`@hourly` | `0 * * * *`
+
+### Using the Crontab Command
+* `crontab file` Install a new crontab from file
+* `crontab -l` List your cron jobs
+* `crontab -e` Edit your cron jobs
+* `crontab -r` Remove all of your cron jobs
+
+
+## Switching User and Running Commands as Other 😸
+### The su command
+* `su [username]` change user ID or become superuser
+
+### su Options
+* `-` A hypen is used to provide an environment similiar to what the user would expect had the user loggin in directly
+* `-c command` Specify a command to be executed
+
+* `whoami` display the username
+
+### example
+* `su oracle` change user to oracle
+* `su - oracle` change user and the env to oracle
+* `su -c 'echo $ORACLE_HOME' - oracle` send command to oracle env without changing user
+
+### sudo - superuser do
+* `sudo` execute a command as another user, typically the superuser
+
+### using sudo
+* `sudo -l` list available commands
+* `sudo command` and `sudo -u root` run command as roo acc
+* `sudo -u user command` run as user
+* `sudo su` swict to the superuser acc
+* `sudo su -` switch to the superuser acc with root env
+* `sudo su - username` switch to the username acc
+* `sudo -s` and `sudo -u root -s` start shell
+* `sudo -u user -s` start a shell as user
+
+### example
+* `sudo /etc/init.d/oracle start`
+* `sudo -u bob /opt/bobapp/bin/start`
+* `sudo su - oracle`
+* `sudo -s`
+
+## Changing the sudo Configuration
+* `visudo` edit the /etc/sudoers file
+
+### sudoers format
+* `user host=(user)[NOPASSWD:]commands`
+### example
+* `adminuser ALL=(ALL)NOPASSWD:ALL`
+* `jason linuxsvr=(root)/etc/init.d/oracle`
+
+
+## Shell History and Tab Completion 😸
+
+### Shell history
+execute commands are added to the history
+Shell history is store in memory on disk
+* `~/.bash_history`
+* `~/.history`
+* `~/.histfile`
+
+### history COMMAND
+* `history` display the shell history
+* `HISTSIZE` control the numberr of commands to retain in history
+* `export HISTSIZE=1000`
+
+### ! Syntax
+* `!N` repeat command line number N
+* `!!` repeat the previous command line
+* `!string` repeat the most recent command starting with "string"
+
+### More ! syntax
+* `!:N` <Event> <Separator> <word>
+* `!` represent a command line (or event) / the most recent command line
+* `:N` represent a word on the command line - 0 = command, 1 = first argument, etc
+
+### even more ! syntax
+* `!^` represent the first argument, is same to !:1
+* `!&` represent the last argument
+
+### Searching Shell history
+* `ctrl-r` reverse shell history search
+* `enter` execute the command
+* `arrows` change the command
+* `crtl+g` cancel the search
+
+
+### Tab Completion
+* `tab` autocompletion
+
+### example
+* `echo !:2`
+* `!e`
+* `echo !^ !l:2 delta !l:0`
+
+## Installing Software 😸
+### RPM Distros
+* RedHat
+* `CentOS`
+* `Fedora`
+* `Oracle Linux`
+* `Scientific Linux`
+### Installing on RPM
+yum
+* `yum search string` search for string
+* `yum info [package]` display info
+* `yum install [-y] package install package`
+* `yum remove package` remove package
+
+rpm
+* `rpm -q1` list all installed packages
+* `rpm -qf /path/to/file` list the files package
+* `rpm -ql package` list package's files
+* `rpm -ivh package.rpm` install package
+* `rpm -e package` erase (uninstall) package
+
+### DEB Distros
+* Debian
+* Linux Mint
+* Ubuntu
+
+### installaing on DEB
+APT - Advance packaging Tool
+* `apt-cache search string` search for string 
+* `apt-get install [-y] package` install package
+* `apt-get remove package` remove package, leaving configuration
+* `apt-get purge package` remove package, deleting configuration
+* `apt-cache show package` display information about package
+
+dpkg
+* `dpkg -l` list installed packages
+* `dpkg -D /path/to/file` list file's package
+
+dpkg
+* `dpkg -L package` list all files in package
+* `dpkg -i package.deb` install package
+
 ## Other 😸
 
 **SORT**
