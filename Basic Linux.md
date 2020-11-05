@@ -286,6 +286,8 @@ Crontab format
 * `0-4 * * * * /opt/acme/bin/first-five-mins` run for the first 5 minutes of the hour
 
 ### crontab shortcut
+
+shortcut | default syntax
 --- | ---
 `@yearly` | `0 0 1 1 *`
 `@annually` | `0 0 1 1 *`
